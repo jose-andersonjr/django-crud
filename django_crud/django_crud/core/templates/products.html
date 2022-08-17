@@ -9,7 +9,7 @@
 <body>
     <ul>
         {% for product in products %}
-            <a href="{% url 'update_product' product.id %}">
+            <a href="{% url 'update_products' product.id %}">
                 <li> {{ product.description }} </li>
             </a>
         {% endfor %}
